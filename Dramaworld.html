@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRAMA WORLD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;            
+            color: white;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        section{
+            margin: 20px;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        .image-scroll-container {
+            white-space: nowrap;
+            animation: scrollImages 20s linear infinite;
+        }
+
+        .image-scroll-container img {
+            max-width: 200%;
+            height: 200;
+            margin-right: 20px; /* Adjust the margin as needed */
+        }
+
+        @keyframes scrollImages {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            } 
+
+        }
+
+        section {
+            margin: 10px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .one {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .movie-box {
+            width: 30%;
+            background-color: rgba(188, 186, 186, 0.304);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .poster-box img {
+            width: 100%;
+            height: 200;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .details-box {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        .plot {
+            margin-top: 20px;
+        }
+        .three{
+            padding: 20px;
+            width:100vw ;
+            margin: 0 auto;
+            background-color: rgb(215, 239, 199);
+        }
+        
+        .about-img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .about-text {
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button a{
+            text-decoration: none;
+            color: white;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>DRAMA WORLD</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="home">
+    <section>
+        <div class="image-scroll-container">
+            <img src="1.webp" alt="Vincenzo" height="300" width="200">
+            <img src="2.webp" alt="DOSS" height="300" width="400">
+            <img src="3.webp" alt="My Demon" height="300" width="400">
+            <img src="4.jpg" alt="Twenty five twenty one" height="300" width="400">
+            <img src="5.jpg" alt="salute to my youth" height="300" width="400">
+            <img src="6.webp" alt="Forever my Sunchine" height="300" width="400">
+    </section>
+    </div>
+
+    <section>
+        <h2>TOP 6 DRAMAS OF THE WEEK</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Poster</th>
+                <th>Language</th>
+                <th>Cast</th>
+                <th>Episodes</th>
+                <th>Info</th>
+            </tr>
+            <tr>
+                <td>Vincenzo</td>
+                <td><img src="1.webp" alt="Vincenzo poster" height="200px" width="300px"></td>
+                <td>Korean</td>
+                <td>SONG JONG KI</td>
+                <td>16</td>
+                <td><button><a href="#one">Read More</a></button></td>
+            </tr>
+            <tr>
+                <td>Descendents Of The Sun</td>
+                <td><img src="2.webp" alt="DOSS" height="200" width="300"></td>
+                <td>Korean</td>
+                <td>SONG JONG KI</td>
+                <td>16</td>
+                <td><button><a href="#one">Read More</a></button></td>
+            </tr>
+            <tr>
+                <td>My Demon</td>
+                <td><img src="3.webp" alt="My Demon" height="200" width="300"></td>
+                <td>Korean</td>
+                <td>SONG KANG</td>
+                <td>16</td>
+                <td><button><a href="#one">Read More</a></button></td>
+            </tr>
+            <tr>
+                <td>Twenty Five Twenty One</td>
+                <td><img src="4.jpg" alt="Twenty five twenty one" height="200" width="300"></td>
+                <td>Korean</td>
+                <td>NAM JI HYUK/td>
+                <td>12</td>
+                <td><button><a href="#two">Read More</a></button></td>
+            </tr>
+            <tr>
+                <td>Salute to my Youth</td>
+                <td> <img src="5.jpg" alt="salute to my youth" height="200" width="300"></td>
+                <td>Chinese</td>
+                <td>ZHEN CHIN</td>
+                <td>30</td>
+                <td><button><a href="#two">Read More</a></button></td>
+            </tr>
+            <tr>
+                <td>Forever my Sunchine</td>
+                <td> <img src="6.webp" alt="Forever my Sunchine" height="200" width="300"></td>
+                <td>Thai</td>
+                <td>Mark Prin</td>
+                <td>16</td>
+                <td><button><a href="#two">Read More</a></button></td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+    <section>
+        <div class="one" id="one">
+        <div class="movie-box">
+            <div class="poster-box">
+                <img src="1.webp" alt="Vincenzo" height="200" width="300">
+            </div>
+            <div class="details-box">
+                <h2>Vincenzo</h2>
+                <p>Release Year: 2020</p>
+                <p>Genre: Drama</p>
+                <p>Director: John Doe</p>
+                <p>IMDb Ratings: 4.5</p>
+                <div class="plot">
+                    <h2>Plot</h2>
+                    <p>During a visit to his motherland, a Korean-Italian Mafia lawyer gives an unrivaled conglomerate a taste of its own medicine with a side of justice...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie-box">
+            <div class="poster-box">
+                <img src="2.webp" alt="Descendents of the Sun" height="200" width="300">
+            </div>
+            <div class="details-box">
+                <h2>Descendents of the Sun</h2>
+                <p>Release Year: 2016</p>
+                <p>Genre: Action, Adventure, Romance</p>
+                <p>Director: kim jong uh</p>
+                <p>IMDb Ratings: 4.0</p>
+                <div class="plot">
+                    <h2>Plot</h2>
+                    <p>A love story develops between Captain Yoo Shi Jin, from South Korean Special Forces and Doctor Kang Mo Yeon, who works as a Surgeon at Haesung Hospital in Seoul. They will find themselves in the middle of great events and deadly dangers, both in their Motherland and in the fictitious, war-torn country of Urk...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie-box">
+            <div class="poster-box">
+                <img src="3.webp" alt="My Demon" height="200" width="300">
+            </div>
+            <div class="details-box">
+                <h2>My Demon</h2>
+                <p>Release Year: 2024</p>
+                <p>Genre: Comedy, Fantasy</p>
+                <p>Director: Lee Sung Kyu</p>
+                <p>IMDb Ratings: 3.9</p>
+                <div class="plot">
+                    <h2>Plot</h2>
+                    <p>Do Do-Hee (Kim You-Jung) is the successor of the Future Group. She has an arrogant and cool-headed personality, who doesn’t trust in anyone. She is cynical about love. Do Do-Hee gets involved with a demon named Jeong Gu-Won (Song Kang) and makes a contract marriage with him. She faces big changes in her life...</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </section>
+    <section>
+        <div class="one" id="two">
+        <div class="movie-box">
+            <div class="poster-box">
+                <img src="4.jpg" alt="Twenty five Twenty one" height="200" width="300">
+            </div>
+            <div class="details-box">
+                <h2>Twenty five Twenty one</h2>
+                <p>Release Year: 2022</p>
+                <p>Genre: Drama, youth, comedy, Romance</p>
+                <p>Director: Kim Na Ra</p>
+                <p>IMDb Ratings: 3.5</p>
+                <div class="plot">
+                    <h2>Plot</h2>
+                    <p>In 1998, Na Hee-do (Kim Tae-ri) is a member of the school fencing team at Seonjung Girls' High School, but due to the IMF crisis, the team is disbanded. To continue pursuing her passion, she transfers to Taeyang High School and later manages to become a member of the National Fencing Team...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie-box">
+            <div class="poster-box">
+                <img src="5.jpg" alt="Salute to my Youth" height="200" width="300">
+            </div>
+            <div class="details-box">
+                <h2>Salute to my Youth</h2>
+                <p>Release Year: 2021</p>
+                <p>Genre: Friendship, romanace, youth</p>
+                <p>Director: Shi Zing</p>
+                <p>IMDb Ratings: 3.5</p>
+                <div class="plot">
+                    <h2>Plot</h2>
+                    <p>The show tells the story of a group of young girls from students to adults and starts to work, experiencing the joys and worries, and harvest sweet love, pure friendship, and warm family stories...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie-box">
+            <div class="poster-box">
+                <img src="6.webp" alt="Forever my Sunshine" height="200" width="300">
+            </div>
+            <div class="details-box">
+                <h2>Forever my Sunshine</h2>
+                <p>Release Year: 2020</p>
+                <p>Genre: Comedy, romance</p>
+                <p>Director: Araadith</p>
+                <p>IMDb Ratings: 3.5</p>
+                <div class="plot">
+                    <h2>Plot</h2>
+                    <p> Paeng had a tragic life of losing her parent, which made her live at Artit's house . Her crazy approach had almost cost Artit which made him hate her. She had to leave home for 6 years until they met again....</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </section>
+    <hr>
+    <div id="about">
+    <section>
+        <div class="three">
+        
+           <h2>About Us</h2>
+        <p>Welcome to KDrama Site, your go-to source for Korean drama information. We're passionate about bringing you the latest and greatest in the world of KDramas.</p>
+        
+        <img class="" src="8.jpg" alt="About KDrama Site">
+
+        <div class="about-text">
+            <h2>Our Mission</h2>
+            <p>Our mission is to provide a platform where KDrama enthusiasts can discover, explore, and discuss their favorite dramas. We aim to create a community that<br> celebrates the beauty of Korean storytelling, characters, and culture.</p>
+
+            <h2>Contact Us</h2>
+            <p>If you have any questions, suggestions, or just want to say hello, feel free to contact us at @kdramalist@gmail.com To find out more about the drama world <br>go to <a href="https://dramacool.com.pa/">Dramacool.com</a>.</p>
+        </div>
+    </div>
+</div>
+
+    </section>
+    <div id="contact">
+    <section>
+        <h2>Send in your reviews</h2>
+        <form>
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" required>
+
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" name="Email" required>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="uk">United Kingdom</option>
+            </select>
+
+            <label for="Review">Review:</label>
+            <input type="text" id="Review" name="Name" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</div>
+
+</body>
+</html>
